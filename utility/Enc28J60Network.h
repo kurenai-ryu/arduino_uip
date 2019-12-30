@@ -26,6 +26,11 @@
 #define Enc28J60Network_H_
 
 #include "mempool.h"
+#ifndef SPCR
+#define SPCR SPCR0
+#define SPSR SPSR0
+#define SPDR SPDR0
+#endif
 
 #define ENC28J60_CONTROL_CS     SS
 #define SPI_MOSI        MOSI
